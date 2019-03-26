@@ -1,0 +1,1589 @@
+CYCLE 1
+  Issued instruction 1 in cycle 1
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |1   |LD    |nan    |nan    |-1   |-1   |34+R2
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= 
+1   :1.00   |Qi= 
+2   :2.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :6.00   |Qi= LD1
+7   :7.00   |Qi= 
+8   :8.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= 
+11  :11.00  |Qi= 
+================================================
+CYCLE 2
+  Issued instruction 2 in cycle 2
+  Started executing instruction 1
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |1   |LD    |nan    |nan    |-1   |-1   |34+R2
+7  |1   |LD    |nan    |nan    |-1   |-1   |45+R3
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= 
+1   :1.00   |Qi= 
+2   :2.00   |Qi= LD2
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :6.00   |Qi= LD1
+7   :7.00   |Qi= 
+8   :8.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= 
+11  :11.00  |Qi= 
+================================================
+CYCLE 3
+  Issued instruction 3 in cycle 3
+  Currently executing instruction 1
+  Started executing instruction 2
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |nan    |4.00   |7    |-1   |0+R-1
+4  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |1   |LD    |nan    |nan    |-1   |-1   |34+R2
+7  |1   |LD    |nan    |nan    |-1   |-1   |45+R3
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :2.00   |Qi= LD2
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :6.00   |Qi= LD1
+7   :7.00   |Qi= 
+8   :8.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= 
+11  :11.00  |Qi= 
+================================================
+CYCLE 4
+  Issued instruction 4 in cycle 4
+  Finished executing instruction 1
+  Currently executing instruction 2
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |1   |SUBD  |nan    |nan    |6    |7    |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |nan    |4.00   |7    |-1   |0+R-1
+4  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |1   |LD    |nan    |nan    |-1   |-1   |34+R2
+7  |1   |LD    |nan    |nan    |-1   |-1   |45+R3
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :2.00   |Qi= LD2
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :6.00   |Qi= LD1
+7   :7.00   |Qi= 
+8   :8.00   |Qi= ADD1
+9   :9.00   |Qi= 
+10  :10.00  |Qi= 
+11  :11.00  |Qi= 
+================================================
+CYCLE 5
+  Issued instruction 5 in cycle 5
+  Finished executing instruction 2
+  Instruction 1 written on cycle 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |1   |SUBD  |8.00   |nan    |-1   |7    |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |nan    |4.00   |7    |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |1   |LD    |nan    |nan    |-1   |-1   |45+R3
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :2.00   |Qi= LD2
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :8.00   |Qi= ADD1
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 6
+  Issued instruction 6 in cycle 6
+  Instruction 2 written on cycle 6
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |1   |SUBD  |8.00   |5.00   |-1   |-1   |0+R-1
+1  |1   |ADDD  |nan    |5.00   |0    |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :8.00   |Qi= ADD1
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 7
+  Started executing instruction 4
+  Started executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |1   |SUBD  |8.00   |5.00   |-1   |-1   |0+R-1
+1  |1   |ADDD  |nan    |5.00   |0    |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :8.00   |Qi= ADD1
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 8
+  Finished executing instruction 4
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |1   |SUBD  |8.00   |5.00   |-1   |-1   |0+R-1
+1  |1   |ADDD  |nan    |5.00   |0    |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :8.00   |Qi= ADD1
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 9
+  Currently executing instruction 3
+  Instruction 4 written on cycle 9
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |1   |ADDD  |3.00   |5.00   |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 10
+  Started executing instruction 6
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |1   |ADDD  |3.00   |5.00   |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 11
+  Finished executing instruction 6
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |1   |ADDD  |3.00   |5.00   |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= ADD2
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 12
+  Currently executing instruction 3
+  Instruction 6 written on cycle 12
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 13
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 14
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 15
+  Currently executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 16
+  Finished executing instruction 3
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |1   |MULTD |5.00   |4.00   |-1   |-1   |0+R-1
+4  |1   |DIVD  |nan    |8.00   |3    |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :0.00   |Qi= MULT1
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 17
+  Instruction 3 written on cycle 17
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 18
+  Started executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 19
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 20
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 21
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 22
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 23
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 24
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 25
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 26
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 27
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 28
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 29
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 30
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 31
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 32
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 33
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 34
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 35
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 36
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 37
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 38
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 39
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 40
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 41
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 42
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 43
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 44
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 45
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 46
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 47
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 48
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 49
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 50
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 51
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 52
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 53
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 54
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 55
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 56
+  Currently executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 57
+  Finished executing instruction 5
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |1   |DIVD  |20.00  |8.00   |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :10.00  |Qi= MULT2
+11  :11.00  |Qi= 
+================================================
+CYCLE 58
+  Instruction 5 written on cycle 58
+RS |Busy|Op    |Vj     |Vk     |Qj   |Qk   |Address   
+0  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+1  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+2  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+3  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+4  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+5  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+6  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+7  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+8  |0   |      |nan    |nan    |-1   |-1   |0+R-1
+
+REGISTER STATUS
+0   :20.00  |Qi= 
+1   :1.00   |Qi= 
+2   :5.00   |Qi= 
+3   :3.00   |Qi= 
+4   :4.00   |Qi= 
+5   :5.00   |Qi= 
+6   :8.00   |Qi= 
+7   :7.00   |Qi= 
+8   :3.00   |Qi= 
+9   :9.00   |Qi= 
+10  :2.50   |Qi= 
+11  :11.00  |Qi= 
+================================================
+
+================SUMMARY TABLE====================
+Ins   |Issue |Ex start|Ex end|Write 
+LD    |1     |2       |4     |5     
+LD    |2     |3       |5     |6     
+MULTD |3     |7       |16    |17    
+SUBD  |4     |7       |8     |9     
+DIVD  |5     |18      |57    |58    
+ADDD  |6     |10      |11    |12    
